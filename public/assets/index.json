@@ -1,0 +1,317 @@
+{
+  "version": 1,
+  "description": "Canonical asset index for Pirate Survival Beat-em-up. All paths are relative to public/assets/.",
+  "characters": {
+    "pirate": {
+      "id": "lobit-pirate",
+      "label": "Lobit Pirate",
+      "role": "player",
+      "characterManifest": "lobit/pirate/character.json",
+      "defaultDirection": "w",
+      "spritesheet": {
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "columns": 5,
+        "rows": 2,
+        "imageWidth": 1280,
+        "imageHeight": 512
+      },
+      "anchor": {
+        "x": 128,
+        "y": 255,
+        "notes": "Bottom-center. Grounded actions share this anchor; jump preserves vertical motion within the frame."
+      },
+      "anchors": {
+        "w": {
+          "chroma1024": "lobit/pirate/anchors/w-1024-chroma.png",
+          "native": "lobit/pirate/anchors/w-native.png",
+          "raw": "lobit/pirate/anchors/w-raw.png"
+        }
+      },
+      "animations": {
+        "idle": {
+          "key": "pirate-idle",
+          "spritesheet": "lobit/pirate/animations/w/idle/spritesheet.png",
+          "preview": "lobit/pirate/animations/w/idle/preview.gif",
+          "manifest": "lobit/pirate/animations/w/idle/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 10,
+          "fps": 6,
+          "repeat": -1,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        },
+        "walk": {
+          "key": "pirate-walk",
+          "spritesheet": "lobit/pirate/animations/w/walk/spritesheet.png",
+          "preview": "lobit/pirate/animations/w/walk/preview.gif",
+          "manifest": "lobit/pirate/animations/w/walk/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 9,
+          "fps": 10,
+          "repeat": -1,
+          "anchorPolicy": "grounded",
+          "sourceMode": "video"
+        },
+        "attack": {
+          "key": "pirate-attack",
+          "spritesheet": "lobit/pirate/animations/w/attack/spritesheet.png",
+          "preview": "lobit/pirate/animations/w/attack/preview.gif",
+          "manifest": "lobit/pirate/animations/w/attack/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 8,
+          "fps": 10,
+          "repeat": 0,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        },
+        "hurt": {
+          "key": "pirate-hurt",
+          "spritesheet": "lobit/pirate/animations/w/hurt/spritesheet.png",
+          "preview": "lobit/pirate/animations/w/hurt/preview.gif",
+          "manifest": "lobit/pirate/animations/w/hurt/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 6,
+          "fps": 8,
+          "repeat": 0,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        },
+        "jump": {
+          "key": "pirate-jump",
+          "spritesheet": "lobit/pirate/animations/w/jump/spritesheet.png",
+          "preview": "lobit/pirate/animations/w/jump/preview.gif",
+          "manifest": "lobit/pirate/animations/w/jump/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 6,
+          "fps": 8,
+          "repeat": 0,
+          "anchorPolicy": "preserve-motion",
+          "sourceMode": "image"
+        },
+        "death": {
+          "key": "pirate-death",
+          "spritesheet": "lobit/pirate/animations/w/death/spritesheet.png",
+          "preview": "lobit/pirate/animations/w/death/preview.gif",
+          "manifest": "lobit/pirate/animations/w/death/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 10,
+          "fps": 8,
+          "repeat": 0,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        }
+      }
+    },
+    "skeleton": {
+      "id": "lobit-skeleton",
+      "label": "Lobit Skeleton",
+      "role": "enemy",
+      "characterManifest": "lobit/skeleton/character.json",
+      "defaultDirection": "w",
+      "spritesheet": {
+        "frameWidth": 256,
+        "frameHeight": 256,
+        "columns": 5,
+        "rows": 2,
+        "imageWidth": 1280,
+        "imageHeight": 512
+      },
+      "anchor": {
+        "x": 128,
+        "y": 255,
+        "notes": "Bottom-center. Grounded actions share this anchor; jump preserves vertical motion within the frame."
+      },
+      "anchors": {
+        "w": {
+          "chroma1024": "lobit/skeleton/anchors/w-1024-chroma.png",
+          "native": "lobit/skeleton/anchors/w-native.png",
+          "raw": "lobit/skeleton/anchors/w-raw.png"
+        }
+      },
+      "animations": {
+        "idle": {
+          "key": "skeleton-idle",
+          "spritesheet": "lobit/skeleton/animations/w/idle/spritesheet.png",
+          "preview": "lobit/skeleton/animations/w/idle/preview.gif",
+          "manifest": "lobit/skeleton/animations/w/idle/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 10,
+          "fps": 6,
+          "repeat": -1,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        },
+        "walk": {
+          "key": "skeleton-walk",
+          "spritesheet": "lobit/skeleton/animations/w/walk/spritesheet.png",
+          "preview": "lobit/skeleton/animations/w/walk/preview.gif",
+          "manifest": "lobit/skeleton/animations/w/walk/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 7,
+          "fps": 10,
+          "repeat": -1,
+          "anchorPolicy": "grounded",
+          "sourceMode": "video"
+        },
+        "attack": {
+          "key": "skeleton-attack",
+          "spritesheet": "lobit/skeleton/animations/w/attack/spritesheet.png",
+          "preview": "lobit/skeleton/animations/w/attack/preview.gif",
+          "manifest": "lobit/skeleton/animations/w/attack/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 8,
+          "fps": 10,
+          "repeat": 0,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        },
+        "hurt": {
+          "key": "skeleton-hurt",
+          "spritesheet": "lobit/skeleton/animations/w/hurt/spritesheet.png",
+          "preview": "lobit/skeleton/animations/w/hurt/preview.gif",
+          "manifest": "lobit/skeleton/animations/w/hurt/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 6,
+          "fps": 8,
+          "repeat": 0,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        },
+        "jump": {
+          "key": "skeleton-jump",
+          "spritesheet": "lobit/skeleton/animations/w/jump/spritesheet.png",
+          "preview": "lobit/skeleton/animations/w/jump/preview.gif",
+          "manifest": "lobit/skeleton/animations/w/jump/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 6,
+          "fps": 8,
+          "repeat": 0,
+          "anchorPolicy": "preserve-motion",
+          "sourceMode": "video"
+        },
+        "death": {
+          "key": "skeleton-death",
+          "spritesheet": "lobit/skeleton/animations/w/death/spritesheet.png",
+          "preview": "lobit/skeleton/animations/w/death/preview.gif",
+          "manifest": "lobit/skeleton/animations/w/death/manifest.json",
+          "frameWidth": 256,
+          "frameHeight": 256,
+          "columns": 5,
+          "rows": 2,
+          "frames": 10,
+          "fps": 8,
+          "repeat": 0,
+          "anchorPolicy": "grounded",
+          "sourceMode": "image"
+        }
+      },
+      "notes": [
+        "W-facing run experiments exist but are not promoted because the skeleton turns, blurs, or detaches the held stick."
+      ]
+    }
+  },
+  "backgrounds": {
+    "pirate_ship_deck": {
+      "key": "bg-pirate-ship-deck",
+      "path": "backgrounds/bg_pirate_ship_deck.png",
+      "imageWidth": 1024,
+      "imageHeight": 1024,
+      "theme": "ship-deck",
+      "description": "Wooden pirate ship deck with masts, rigging, barrels, and blue sky."
+    },
+    "port_town_dock": {
+      "key": "bg-port-town-dock",
+      "path": "backgrounds/bg_port_town_dock.png",
+      "imageWidth": 1024,
+      "imageHeight": 1024,
+      "theme": "port-town",
+      "description": "Tropical port town dock at sunset with tavern, palm trees, and harbor."
+    },
+    "skeleton_island": {
+      "key": "bg-skeleton-island",
+      "path": "backgrounds/bg_skeleton_island.png",
+      "imageWidth": 1024,
+      "imageHeight": 1024,
+      "theme": "skeleton-island",
+      "description": "Spooky moonlit beach with shipwreck, dead trees, and skull-shaped rocks."
+    }
+  },
+  "audio": {
+    "bgm": {
+      "battle": {
+        "key": "bgm-battle",
+        "path": "bgm/bgm_battle.wav",
+        "label": "Action Battle Theme"
+      }
+    },
+    "sfx": {
+      "swing": {
+        "key": "sfx-swing",
+        "path": "sfx/swordswing.mp3"
+      },
+      "player_hurt": {
+        "key": "sfx-player-hurt",
+        "path": "sfx/playerdie.mp3"
+      },
+      "enemy_hurt": {
+        "key": "sfx-enemy-hurt",
+        "path": "sfx/enemyhurt.mp3"
+      },
+      "round_complete": {
+        "key": "sfx-round-complete",
+        "path": "sfx/roundcomplete.wav"
+      },
+      "game_over": {
+        "key": "sfx-game-over",
+        "path": "sfx/gameover.wav"
+      },
+      "coin_pickup": {
+        "key": "sfx-coin-pickup",
+        "path": "sfx/coin_pickup.mp3"
+      }
+    }
+  },
+  "meta": {
+    "phaserIntegration": {
+      "spritesheetLoading": "Use scene.load.spritesheet(key, path, { frameWidth, frameHeight }) for each animation spritesheet. Frame indices are 0-based, laid out left-to-right, top-to-bottom in a grid of columns×rows. Only 'frames' count of cells are valid; remaining cells in the last row are empty.",
+      "animationCreation": "Use scene.anims.create({ key, frames: scene.anims.generateFrameNumbers(sheetKey, { start: 0, end: frames - 1 }), frameRate: fps, repeat }). repeat=-1 means loop forever (idle, walk); repeat=0 means play once (attack, hurt, jump, death).",
+      "anchorAlignment": "All grounded animations share anchor (128, 255) — the bottom-center of the 256×256 cell. Set sprite origin to (anchor.x / frameWidth, anchor.y / frameHeight) = (0.5, ~1.0) so the sprite's feet align with the world position.",
+      "directionFlipping": "All spritesheets face west (left). To face east (right), use sprite.setFlipX(true).",
+      "backgroundLoading": "Use scene.load.image(key, path). Backgrounds are 1024×1024 single images — scale or position to fit your game resolution (1280×720)."
+    }
+  }
+}
