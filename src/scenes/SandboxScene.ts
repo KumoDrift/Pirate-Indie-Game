@@ -694,7 +694,8 @@ export class SandboxScene extends BaseScene {
         enemySprite.play('skeleton-idle');
       }
       if (anim.key === 'skeleton-hurt' && enemyInstance.state !== 'dead') {
-        enemyInstance.state = 'chase';
+        enemyInstance.state = 'cooldown';
+        enemyInstance.cooldownTimer = 1000; // 1 second breathing room for player
         enemySprite.play('skeleton-idle');
       }
     });
